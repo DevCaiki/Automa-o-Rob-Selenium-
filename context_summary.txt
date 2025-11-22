@@ -1,0 +1,10 @@
+Contexto Atual:
+- O script de automação (`automacao_servopa.py`) está sendo executado via uma interface gráfica Tkinter (`run_automacao.py`).
+- O problema principal é a detecção de CAPTCHA e a exceção `InvalidSessionIdException`, indicando que a sessão do navegador está sendo descartada.
+- O usuário criou e logou manualmente em um perfil específico do Firefox (`C:\Users\gabri\AppData\Roaming\Mozilla\Firefox\Profiles\oj00n9wt.seleniumProfile`), resolvendo o CAPTCHA para essa sessão.
+- O script foi configurado com sucesso para usar o perfil `oj00n9wt.seleniumProfile` do Firefox, mantendo a sessão do usuário logada.
+- O problema de "loading infinito" (relacionado ao elemento `pace-active`) foi resolvido com a remoção forçada do elemento via JavaScript.
+- A interface Tkinter foi atualizada para usar threading e redirecionar os logs para a própria janela.
+
+Próximos Passos:
+1.  **Testar a automação de ponta a ponta:** Verificar se o CAPTCHA não aparece mais e se o fluxo de automação (`login` -> `busca de cota` -> `lance`) é executado completamente sem interrupções ou a necessidade de intervenção manual.
